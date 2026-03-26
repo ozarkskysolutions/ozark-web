@@ -19,7 +19,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev",
-      to: process.env.CONTACT_TO_EMAIL || "contact@ozarkskysolutions.com",
+      to: process.env.CONTACT_TO_EMAIL || "ozarkskysolutions@gmail.com",
       subject: `New project inquiry from ${name}`,
       replyTo: email,
       html: `
