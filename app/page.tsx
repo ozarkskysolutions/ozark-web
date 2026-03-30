@@ -30,17 +30,17 @@ const work = [
   {
     title: "Operations Dashboard",
     description:
-      "A modern internal dashboard experience focused on visibility, workflow efficiency, and maintainable UI patterns.",
+      "A modern dashboard experience that improved visibility and reduced manual tracking for operations-focused teams.",
   },
   {
     title: "Mobile Scheduling Platform",
     description:
-      "A scheduling experience designed for speed, clarity, and cross-platform usability across web and mobile devices.",
+      "A scheduling solution designed to streamline appointment management and create a faster, clearer user experience across devices.",
   },
   {
     title: "Enterprise Data & Reporting",
     description:
-      "Structured reporting and data presentation solutions for teams that rely on clear, reliable operational insights.",
+      "A reporting-focused solution that turned complex data into clear, structured views teams could use to make decisions faster.",
   },
 ];
 
@@ -70,13 +70,22 @@ export default function Home() {
           </a>
 
           <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
-            <a href="#services" className="transition duration-300 hover:text-white">
+            <a
+              href="#services"
+              className="transition duration-300 hover:text-white"
+            >
               Services
             </a>
-            <a href="#work" className="transition duration-300 hover:text-white">
+            <a
+              href="#work"
+              className="transition duration-300 hover:text-white"
+            >
               Work
             </a>
-            <a href="#contact" className="transition duration-300 hover:text-white">
+            <a
+              href="#contact"
+              className="transition duration-300 hover:text-white"
+            >
               Contact
             </a>
           </nav>
@@ -91,13 +100,18 @@ export default function Home() {
             </div>
 
             <h1 className="max-w-3xl text-5xl font-semibold leading-tight tracking-tight sm:text-6xl">
-              Premium software solutions for businesses that need to move faster.
+              Custom Web Apps & Automation That Help Your Business Run Faster.
             </h1>
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
-              Ozark Sky Solutions builds modern web applications, scalable backend
-              systems, and automation tools that help businesses operate more
-              efficiently with software that feels polished and dependable.
+              Ozark Sky Solutions builds modern web applications, scalable
+              backend systems, and automation tools that help businesses reduce
+              manual work, improve efficiency, and operate with confidence.
+            </p>
+
+            <p className="mt-4 text-sm text-white/60">
+              For small businesses, teams, and growing companies that need
+              better software — not just a website.
             </p>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -105,7 +119,7 @@ export default function Home() {
                 href="#contact"
                 className="rounded-2xl bg-white px-6 py-3 text-sm font-semibold text-black transition duration-300 hover:scale-[1.02] hover:opacity-95"
               >
-                Start a Project
+                Request a Project Estimate
               </a>
               <a
                 href="#work"
@@ -156,7 +170,8 @@ export default function Home() {
                       Delivery Focus
                     </p>
                     <p className="mt-2 text-lg font-medium text-white">
-                      Clean architecture. Reliable execution. Business-first results.
+                      Software that reduces manual work and supports real
+                      business growth.
                     </p>
                   </div>
 
@@ -175,7 +190,7 @@ export default function Home() {
                         Backend
                       </p>
                       <p className="mt-2 text-base font-medium text-white">
-                        APIs, services, integrations, automation
+                        APIs, services, integrations, and automation
                       </p>
                     </div>
                   </div>
@@ -185,9 +200,9 @@ export default function Home() {
                       Approach
                     </p>
                     <p className="mt-2 text-sm leading-7 text-white/70">
-                      We design software experiences that are polished on the
-                      surface and disciplined underneath — built to support real
-                      workflows, not just look good in screenshots.
+                      We build software that looks polished on the surface and
+                      is disciplined underneath — designed to solve real
+                      problems, support real workflows, and hold up over time.
                     </p>
                   </div>
                 </div>
@@ -223,7 +238,9 @@ export default function Home() {
                 className="rounded-[1.75rem] border border-white/10 bg-white/5 p-8 backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-cyan-300/20 hover:bg-white/[0.07]"
               >
                 <div className="mb-5 h-1 w-14 rounded-full bg-cyan-300/80" />
-                <h3 className="text-xl font-medium text-white">{service.title}</h3>
+                <h3 className="text-xl font-medium text-white">
+                  {service.title}
+                </h3>
                 <p className="mt-4 text-base leading-7 text-white/65">
                   {service.description}
                 </p>
@@ -233,7 +250,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="work" className="relative z-10 border-y border-white/10 bg-white/[0.02]">
+      <section
+        id="work"
+        className="relative z-10 border-y border-white/10 bg-white/[0.02]"
+      >
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
           <div className="max-w-2xl">
             <p className="text-sm uppercase tracking-[0.25em] text-cyan-200">
@@ -242,6 +262,10 @@ export default function Home() {
             <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
               Designed to feel premium, built to perform.
             </h2>
+            <p className="mt-5 text-lg leading-8 text-white/70">
+              We focus on delivering software that improves workflows, reduces
+              friction, and gives teams better tools to do their jobs.
+            </p>
           </div>
 
           <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -272,11 +296,17 @@ export default function Home() {
                   Let’s Build Something Strong
                 </p>
                 <h2 className="mt-4 text-3xl font-semibold tracking-tight sm:text-4xl">
-                  Need a polished web app, internal tool, or modern software presence?
+                  Need a polished web app, internal tool, or modern software
+                  presence?
                 </h2>
                 <p className="mt-5 text-lg leading-8 text-white/70">
-                  Ozark Sky Solutions partners with businesses that need software
-                  that looks sharp, works reliably, and supports real-world growth.
+                  Ozark Sky Solutions partners with businesses that need
+                  software that looks sharp, works reliably, and supports
+                  real-world growth.
+                </p>
+
+                <p className="mt-6 text-sm text-white/60">
+                  Typically respond within 24 hours.
                 </p>
 
                 <div className="mt-8">
@@ -284,7 +314,7 @@ export default function Home() {
                     href="mailto:contact@ozarkskysolutions.com"
                     className="text-base font-medium text-cyan-200 transition hover:text-white"
                   >
-                    ozarkskysolutions@gmail.com
+                    contact@ozarkskysolutions.com
                   </a>
                 </div>
               </div>
@@ -320,7 +350,10 @@ export default function Home() {
             </a>
           </div>
 
-          <p>© {new Date().getFullYear()} Ozark Sky Solutions. All rights reserved.</p>
+          <p>
+            © {new Date().getFullYear()} Ozark Sky Solutions. All rights
+            reserved.
+          </p>
         </div>
       </footer>
     </main>
