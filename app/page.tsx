@@ -17,12 +17,17 @@ const services = [
     description:
       "Workflow automation and internal platforms that reduce manual effort and improve operational efficiency.",
   },
+  {
+    title: "AI & Automation Solutions",
+    description:
+      "AI-powered tools and automation workflows that reduce manual work, streamline operations, and improve efficiency across your business.",
+  },
 ];
 
 const highlights = [
   "Modern frontend architecture",
   "Scalable backend systems",
-  "Automation that saves time",
+  "AI-powered automation",
   "Clean, maintainable code",
 ];
 
@@ -105,8 +110,9 @@ export default function Home() {
 
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/70">
               Ozark Sky Solutions builds modern web applications, scalable
-              backend systems, and automation tools that help businesses reduce
-              manual work, improve efficiency, and operate with confidence.
+              backend systems, and AI-powered automation tools that help
+              businesses reduce manual work, improve efficiency, and operate
+              with confidence.
             </p>
 
             <p className="mt-4 text-sm text-white/60">
