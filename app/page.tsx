@@ -309,7 +309,7 @@ export default function Home() {
                       href="mailto:contact@ozarkskysolutions.com"
                       className="text-base font-medium text-cyan-200 transition hover:text-white"
                     >
-                      contact@ozarkskysolutions.com
+                      ozarkskysolutions@gmail.com
                     </a>
                   </div>
                 </div>
