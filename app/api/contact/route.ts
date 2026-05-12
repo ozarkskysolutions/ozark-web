@@ -1,6 +1,7 @@
 import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
+const contactDeliveryEmail = "ozarkskysolutions@gmail.com";
 
 export async function POST(request: Request) {
   try {
@@ -17,13 +18,20 @@ export async function POST(request: Request) {
       );
     }
 
+    if (!isValidEmail(email)) {
+      return Response.json(
+        { error: "Please enter a valid email address." },
+        { status: 400 }
+      );
+    }
+
     await resend.emails.send({
       from: process.env.CONTACT_FROM_EMAIL || "onboarding@resend.dev",
-      to: process.env.CONTACT_TO_EMAIL || "ozarkskysolutions@gmail.com",
+      to: contactDeliveryEmail,
       subject: `New project inquiry from ${name}`,
       replyTo: email,
       html: `
-        <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+        <div style="font-family: system-ui, sans-serif; line-height: 1.6;">
           <h2>New Project Inquiry</h2>
           <p><strong>Name:</strong> ${escapeHtml(name)}</p>
           <p><strong>Email:</strong> ${escapeHtml(email)}</p>
@@ -41,6 +49,10 @@ export async function POST(request: Request) {
       { status: 500 }
     );
   }
+}
+
+function isValidEmail(value: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
 function escapeHtml(value: string) {
